@@ -9,11 +9,10 @@ class TreeNode:
 
 class ShopifyTree:
     '''
-    Standard AVL Tree implementation, derived from my lab solution to creating a
-    Red-Black Tree in Java for CS61B (data structures). This ensures that the max depth
+    Standard AVL Tree implementation found on the internet. This ensures that the max depth
     will never be past 4, as per request by Shopify.
     
-    Link: https://inst.eecs.berkeley.edu/~cs61b/fa17/materials/lab/lab12/index.html
+    Link: http://blog.coder.si/2014/02/how-to-implement-avl-tree-in-python.html
     '''
     def __init__(self):
         self.root = None
