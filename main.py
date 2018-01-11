@@ -1,5 +1,5 @@
 from treemap import TreeMap as t
-import os, codecs, json
+import os, json
 import numpy as np
 
 def jsonify(output):
@@ -26,14 +26,13 @@ def process(mapping):
         else:
             output['invalid_menus'].append(mapping.trees[key].__dict__())
     jsonify(output)
-    return output
 
 if __name__ == "__main__":
     mapping = t()
     mapping.appendMenus()
     for i in range(mapping.total):
         mapping.parse(i)
-    output = process(mapping)
+    process(mapping)
 
     
 
