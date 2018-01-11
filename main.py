@@ -1,6 +1,5 @@
 from treemap import TreeMap as t
 import os, json
-import numpy as np
 
 def jsonify(output):
     current_dir = os.getcwd()
