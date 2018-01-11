@@ -1,0 +1,34 @@
+{
+    "valid_menus": [
+        {
+            "root_id": 2,
+            "children": [
+                4,
+                5,
+                6,
+                8
+            ]
+        },
+        {
+            "root_id": 9,
+            "children": [
+                10,
+                11,
+                12,
+                13,
+                14
+            ]
+        }
+    ],
+    "invalid_menus": [
+        {
+            "root_id": 1,
+            "children": [
+                1,
+                3,
+                7,
+                15
+            ]
+        }
+    ]
+}
