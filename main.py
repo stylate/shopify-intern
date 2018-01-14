@@ -1,19 +1,19 @@
 from treemap import TreeMap as t
 import os, json
 
-def jsonify(output):
-    current_dir = os.getcwd()
-    path = current_dir + "/output.json"
-    outputFile = open(path, 'w')
-    outputFile.write(json.dumps(output, indent=4))
-    outputFile.close()
-
 def process(mapping):
     '''
     Process the amount of menus created from parsing.
     We create a dictionary, such that we have two keys VALID_MENUS
     and INVALID_MENUS. Their values yield respective arrays of menus.
     '''
+    def jsonify(output):
+        current_dir = os.getcwd()
+        path = current_dir + "/output.json"
+        outputFile = open(path, 'w')
+        outputFile.write(json.dumps(output, indent=4))
+        outputFile.close()
+
     # initialization
     output = {}
     output['valid_menus'] = []
